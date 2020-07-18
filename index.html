@@ -8,8 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>BarberShop</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="">
     <!-- Header section -->
@@ -132,7 +134,7 @@
     </header>
     <main>
       <!-- About Us Section -->
-      <section class="about-us container" id="about-us">
+      <section class="about-us container" id="about-us" data-aos="fade-right">
         <div class="photo-style">
           <picture>
             <source
@@ -241,7 +243,7 @@
       <!-- End About Us Section -->
 
       <!-- Service And Price Section -->
-      <section class="default-section-service" id="service-price">
+      <section class="default-section-service" id="service-price" data-aos="fade-left">
         <div class="container section-service-price">
           <p class="description hr-two">
             Проведи время в компании лучших мастеров
@@ -304,7 +306,7 @@
       <!-- End Service And Price Section -->
 
       <!-- Features Section -->
-      <section class="feature container">
+      <section class="feature container" data-aos="fade-right">
         <div class="feature-text">
           <p class="hr">старая традиционная школа</p>
           <h2 class="feature-title">Почему приходят именно к нам?</h2>
@@ -337,7 +339,7 @@
       <!-- End Feature Section -->
 
       <!-- Our Master Section -->
-      <section class="ourmasters" id="ourmasters">
+      <section class="ourmasters" id="ourmasters" data-aos="fade-left">
         <div class="container">
           <h3 class="line-befor hr">для настоящих ценителей атмосферы</h3>
           <h2 class="name-masters">Наши мастера</h2>
@@ -644,7 +646,7 @@
       <!-- End Our Master Section -->
 
       <!-- Photo Content Section -->
-      <section class="container content-section">
+      <section class="container content-section" data-aos="fade-right">
         <div class="photo">
           <p class="paragraph hr">на латинском языке “барба” означает “борода”</p>
         </div>
@@ -804,7 +806,7 @@
     </main>
 
     <!-- Page Footer Section -->
-    <footer class="page-footer" id="subscribe">
+    <footer class="page-footer" id="subscribe" data-aos="fade-up">
       <!-- <div class="container"> -->
       <section class="page-footer-default ">
     
@@ -948,5 +950,13 @@
     <script src="./js/slider.js"></script>
     <script src="./index.js"></script>
     <script src="./js/modal.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
